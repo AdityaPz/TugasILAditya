@@ -60,7 +60,7 @@ fun AppNavigation(
 //                }
 //            )
             TopAppBar(
-                title = { Text(text = "Infinite App") },
+                title = { Text(text = "") },
                 navigationIcon = {
                     BackButton(navController = navController)
                 },

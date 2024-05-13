@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,7 +37,7 @@ fun MentorItem(
         Image(
             painter = painterResource(id = mentor.photo),
             contentDescription = mentor.name, modifier = Modifier
-                .clip(CircleShape)
+                .clip(RoundedCornerShape(10.dp))
                 .size(80.dp)
         )
         Text(
